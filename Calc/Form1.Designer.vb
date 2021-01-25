@@ -24,15 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnSubtract = New System.Windows.Forms.Button()
-        Me.btnMultiply = New System.Windows.Forms.Button()
-        Me.btnDivide = New System.Windows.Forms.Button()
         Me.txtValueOne = New System.Windows.Forms.TextBox()
         Me.txtValue2 = New System.Windows.Forms.TextBox()
         Me.txtAnswer = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.rbtnAdd = New System.Windows.Forms.RadioButton()
+        Me.rbtnSubtract = New System.Windows.Forms.RadioButton()
+        Me.rbtnMultiply = New System.Windows.Forms.RadioButton()
+        Me.rbtnDivide = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label1
@@ -48,39 +49,12 @@ Partial Class Form1
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(565, 142)
+        Me.btnAdd.Location = New System.Drawing.Point(561, 199)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(141, 61)
         Me.btnAdd.TabIndex = 1
-        Me.btnAdd.Text = "Add"
+        Me.btnAdd.Text = "Calculate"
         Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'btnSubtract
-        '
-        Me.btnSubtract.Location = New System.Drawing.Point(565, 222)
-        Me.btnSubtract.Name = "btnSubtract"
-        Me.btnSubtract.Size = New System.Drawing.Size(141, 61)
-        Me.btnSubtract.TabIndex = 2
-        Me.btnSubtract.Text = "Subtract"
-        Me.btnSubtract.UseVisualStyleBackColor = True
-        '
-        'btnMultiply
-        '
-        Me.btnMultiply.Location = New System.Drawing.Point(565, 303)
-        Me.btnMultiply.Name = "btnMultiply"
-        Me.btnMultiply.Size = New System.Drawing.Size(141, 61)
-        Me.btnMultiply.TabIndex = 3
-        Me.btnMultiply.Text = "Multiply"
-        Me.btnMultiply.UseVisualStyleBackColor = True
-        '
-        'btnDivide
-        '
-        Me.btnDivide.Location = New System.Drawing.Point(565, 377)
-        Me.btnDivide.Name = "btnDivide"
-        Me.btnDivide.Size = New System.Drawing.Size(141, 61)
-        Me.btnDivide.TabIndex = 4
-        Me.btnDivide.Text = "Divide"
-        Me.btnDivide.UseVisualStyleBackColor = True
         '
         'txtValueOne
         '
@@ -130,20 +104,62 @@ Partial Class Form1
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Answer"
         '
+        'rbtnAdd
+        '
+        Me.rbtnAdd.AutoSize = True
+        Me.rbtnAdd.Checked = True
+        Me.rbtnAdd.Location = New System.Drawing.Point(453, 183)
+        Me.rbtnAdd.Name = "rbtnAdd"
+        Me.rbtnAdd.Size = New System.Drawing.Size(44, 17)
+        Me.rbtnAdd.TabIndex = 12
+        Me.rbtnAdd.Text = "Add"
+        Me.rbtnAdd.UseVisualStyleBackColor = True
+        '
+        'rbtnSubtract
+        '
+        Me.rbtnSubtract.AutoSize = True
+        Me.rbtnSubtract.Location = New System.Drawing.Point(453, 206)
+        Me.rbtnSubtract.Name = "rbtnSubtract"
+        Me.rbtnSubtract.Size = New System.Drawing.Size(65, 17)
+        Me.rbtnSubtract.TabIndex = 13
+        Me.rbtnSubtract.Text = "Subtract"
+        Me.rbtnSubtract.UseVisualStyleBackColor = True
+        '
+        'rbtnMultiply
+        '
+        Me.rbtnMultiply.AutoSize = True
+        Me.rbtnMultiply.Location = New System.Drawing.Point(453, 229)
+        Me.rbtnMultiply.Name = "rbtnMultiply"
+        Me.rbtnMultiply.Size = New System.Drawing.Size(60, 17)
+        Me.rbtnMultiply.TabIndex = 14
+        Me.rbtnMultiply.Text = "Multiply"
+        Me.rbtnMultiply.UseVisualStyleBackColor = True
+        '
+        'rbtnDivide
+        '
+        Me.rbtnDivide.AutoSize = True
+        Me.rbtnDivide.Location = New System.Drawing.Point(453, 252)
+        Me.rbtnDivide.Name = "rbtnDivide"
+        Me.rbtnDivide.Size = New System.Drawing.Size(55, 17)
+        Me.rbtnDivide.TabIndex = 15
+        Me.rbtnDivide.Text = "Divide"
+        Me.rbtnDivide.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(808, 496)
+        Me.Controls.Add(Me.rbtnDivide)
+        Me.Controls.Add(Me.rbtnMultiply)
+        Me.Controls.Add(Me.rbtnSubtract)
+        Me.Controls.Add(Me.rbtnAdd)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtAnswer)
         Me.Controls.Add(Me.txtValue2)
         Me.Controls.Add(Me.txtValueOne)
-        Me.Controls.Add(Me.btnDivide)
-        Me.Controls.Add(Me.btnMultiply)
-        Me.Controls.Add(Me.btnSubtract)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
@@ -155,13 +171,14 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAdd As Button
-    Friend WithEvents btnSubtract As Button
-    Friend WithEvents btnMultiply As Button
-    Friend WithEvents btnDivide As Button
     Friend WithEvents txtValueOne As TextBox
     Friend WithEvents txtValue2 As TextBox
     Friend WithEvents txtAnswer As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents rbtnAdd As RadioButton
+    Friend WithEvents rbtnSubtract As RadioButton
+    Friend WithEvents rbtnMultiply As RadioButton
+    Friend WithEvents rbtnDivide As RadioButton
 End Class

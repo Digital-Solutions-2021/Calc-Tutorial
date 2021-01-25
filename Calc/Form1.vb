@@ -23,16 +23,29 @@ Public Class Form1
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         ' Add Button
-        Dim iNumber1 As Integer
-        Dim iNumber2 As Integer
-        Dim iAns As Integer
+        Dim iNumber1 As Double
+        Dim iNumber2 As Double
+        Dim iAns As Double
+
+        Dim iMethod As Integer
 
         ' Input path
         iNumber1 = txtValueOne.Text
         iNumber2 = txtValue2.Text
 
+        ' Radio Buttons
+        If rbtnAdd.Checked = True Then
+            iMethod = 1
+        ElseIf rbtnSubtract.Checked = True Then
+            iMethod = 2
+        ElseIf rbtnMultiply.Checked = True Then
+            iMethod = 3
+        ElseIf rbtnDivide.Checked = True Then
+            iMethod = 4
+        End If
+
         ' Processing Path
-        iAns = Calculator(iNumber1, iNumber2, 1)
+        iAns = Calculator(iNumber1, iNumber2, iMethod)
 
         ' Output
         txtAnswer.Text = iAns
@@ -40,6 +53,10 @@ Public Class Form1
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

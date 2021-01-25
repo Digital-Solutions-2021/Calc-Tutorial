@@ -1,4 +1,4 @@
-﻿' Code by Charlie McMahon - 2021
+﻿' Code by Charlie McMahon - Copyright 2021
 Public Class Form1
 
     Function Calculator(number1 As Double, number2 As Double, method As Integer) As Double

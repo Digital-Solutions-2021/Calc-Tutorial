@@ -1,0 +1,12 @@
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\bin\Debug\Calc.exe.config
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\bin\Debug\Calc.exe
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\bin\Debug\Calc.pdb
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\bin\Debug\Calc.xml
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.vbprojAssemblyReference.cache
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.Form1.resources
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.Resources.resources
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.vbproj.GenerateResource.cache
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.vbproj.CoreCompileInputs.cache
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.exe
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.xml
+C:\Users\charl\Documents\GitHub\Calc-Tutorial\Calc\obj\Debug\Calc.pdb
